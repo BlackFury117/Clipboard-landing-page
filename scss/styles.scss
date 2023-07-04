@@ -1,0 +1,22 @@
+@use 'globals/reset';
+@use 'globals/typography';
+
+.container{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "hero-img hero-img hero-img"
+      "text-zone text-zone text-zone"
+      "btn-zone btn-zone btn-zone";
+}  
+.hero-img { grid-area: hero-img; } 
+.text-zone { grid-area: text-zone; }
+.btn-zone { grid-area: btn-zone; }
+  
