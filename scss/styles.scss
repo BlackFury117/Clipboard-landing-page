@@ -186,7 +186,7 @@
 
     .para-fourth{
         color: variables.$color-text;
-        margin-bottom: 3.6rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -199,7 +199,7 @@
     grid-template-areas:
       "tools tools tools"
       "brand brand brand";
-    margin: 0 6rem;
+    margin: 0 6rem 2rem 6rem;
 
     .tools{  
         display: grid;
@@ -258,8 +258,35 @@
     .brand-4 { grid-area: brand-4; justify-self: center; align-self: center; }
     
     .brand-5 { grid-area: brand-5; justify-self: center; align-self: center; }
+}
 
+.last-section{
+    text-align: center;
+    width: 700px;
+    margin: 0 auto 7rem auto;
 
+    h5{
+        @include heading-style;
+    }
+
+    .last-paragraph{
+        color: variables.$color-text;
+        margin-bottom: 2.5rem;
+    }
+
+    .btn{
+        @include button-style;
+    }
+    
+    .btn-two {
+        @include button-style;
+        background-color: variables.$second-bg-color-button;
+        box-shadow: 5px 7px 20px 0px #939fff, inset -1px -1px 5px #81868c;
+    }
+    
+    .btn-two:hover {
+        background-color: #828eee;
+    }
 }
   
   
