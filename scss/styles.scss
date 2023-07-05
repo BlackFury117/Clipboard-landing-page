@@ -299,8 +299,14 @@
     grid-auto-flow: row;
     grid-template-areas:
       "footer-1 footer-2 footer-3 footer-4 footer-5";
+    background-color: #f5f6f8;
+    padding: 2rem 6rem 2rem 6rem;
 
     .footer-1 { grid-area: footer-1; }
+
+    .footer-img{
+        width: 50px;
+    }
 
     .footer-2{  
         display: grid;
@@ -328,17 +334,18 @@
             "privacy"
             "press";
         grid-area: footer-3;
+        color: variables.$color-text;
     }
     
-    .privacy { grid-area: privacy; }
+    .privacy { grid-area: privacy; color: variables.$color-text; }
     
-    .press { grid-area: press; }
+    .press { grid-area: press; color: variables.$color-text; }
     
-    .footer-4 { grid-area: footer-4; }
+    .footer-4 { grid-area: footer-4; color: variables.$color-text; }
     
-    .footer-5 { grid-area: footer-5; }
+    .footer-5 { grid-area: footer-5; justify-self: end; }
+
+    .icon-footer {
+        padding-right: .800rem;
+    }
 }
-  
-  
-  
-  
