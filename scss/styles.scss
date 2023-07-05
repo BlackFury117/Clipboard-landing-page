@@ -28,12 +28,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 
     .container{  
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 0.5fr);
         gap: 0px 0px;
         grid-auto-flow: row;
         justify-content: center;
@@ -45,45 +44,103 @@
           "text-zone text-zone text-zone"
           "btn-zone btn-zone btn-zone";
         width: 700px;
+        margin-bottom: 4rem;
+
+        .hero-img{ 
+            grid-area: hero-img;
+            margin-bottom: 0.500rem;
+            margin-top: 2.2rem;
+        }
+
+        .text-zone{
+            grid-area: text-zone;
+            text-align: center;
+    
+            h1{
+                font-size: 2.75rem;
+                color: variables.$color-heading;
+                margin-bottom: 1.75rem;
+            }
+            
+            .hero-text{
+                color: variables.$color-text;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .btn-zone{ 
+            grid-area: btn-zone;
+            align-self: start;
+    
+            .btn{
+                @include button-style;
+            }
+            
+            .btn-two {
+                @include button-style;
+                background-color: variables.$second-bg-color-button;
+                box-shadow: 5px 7px 20px 0px #939fff, inset -1px -1px 5px #81868c;
+            }
+            
+            .btn-two:hover {
+                background-color: #828eee;
+            }
+        }
+    }    
+}
+
+.text {
+    text-align: center;
+    margin: 0 auto 4rem auto;
+    width: 700px;
+
+    h2{
+        font-size: 2.2rem;
+        color: variables.$color-heading;
+        margin-bottom: 1.5rem;
     }
 
-    .hero-img{ 
-        grid-area: hero-img;
-        margin-bottom: 0.500rem; 
-    } 
-    .text-zone{
-        grid-area: text-zone;
-        text-align: center;
-
-        h1{
-            font-size: 2.75rem;
-            color: variables.$color-heading;
-            margin-bottom: 1.75rem;
-        }
-        
-        .hero-text{
-            color: variables.$color-text;
-            margin-bottom: 1.95rem;
-        }
-    }
-    .btn-zone{ 
-        grid-area: btn-zone;
-        align-self: start;
-
-        .btn{
-            @include button-style;
-        }
-        
-        .btn-two {
-            @include button-style;
-            background-color: variables.$second-bg-color-button;
-            box-shadow: 5px 7px 20px 0px #939fff, inset -1px -1px 5px #81868c;
-        }
-        
-        .btn-two:hover {
-            background-color: #828eee;
-        }
+    .paragraph{
+        color: variables.$color-text;
     }
 }
 
+.container{  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img-section text-section";
 
+    .img-section{ 
+        grid-area: img-section;
+    }
+
+    .img-one {
+        width: 90%;
+        position: relative;
+        left: -1.5rem;
+    }
+
+    .text-section{
+    align-self: center;
+    grid-area: text-section;
+    width: 350px;
+    // margin: 0 3rem 0 0;
+    }
+
+    .head{
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: variables.$color-heading;
+    }
+
+    .body {
+        color: variables.$color-text;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+}
+  
