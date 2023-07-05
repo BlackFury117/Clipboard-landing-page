@@ -288,6 +288,57 @@
         background-color: #828eee;
     }
 }
+
+/// FOOTER SECTION ///
+  
+.footer-container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "footer-1 footer-2 footer-3 footer-4 footer-5";
+
+    .footer-1 { grid-area: footer-1; }
+
+    .footer-2{  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "faq"
+            "contact";
+        grid-area: footer-2;
+    }
+    
+    .faq { grid-area: faq; }
+    
+    .contact { grid-area: contact; }
+    
+    .footer-3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "privacy"
+            "press";
+        grid-area: footer-3;
+    }
+    
+    .privacy { grid-area: privacy; }
+    
+    .press { grid-area: press; }
+    
+    .footer-4 { grid-area: footer-4; }
+    
+    .footer-5 { grid-area: footer-5; }
+}
+  
   
   
   
