@@ -1,6 +1,25 @@
 @use 'globals/reset';
 @use 'globals/typography';
 @use 'globals/variables';
+// @use 'globals/mixin.scss';
+
+@mixin button-style {
+    cursor: pointer;
+    background-color: variables.$first-bg-color-button;
+    color: white;
+    box-shadow: 5px 7px 20px 0px #67fce6, inset -1px -1px 5px #81868c;
+    font-size: 0.900rem;
+    font-weight: bold;
+    padding: 0.800rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    margin-left: 0.600rem;
+
+    &:hover {
+        background-color: #50cdba;
+        transition: 0.35s linear;
+    }
+}
 
 .bg-container{
     background-image: url(/images/bg-header-desktop.png);
@@ -44,33 +63,21 @@
         
         .hero-text{
             color: variables.$color-text;
+            margin-bottom: 1.95rem;
         }
     }
     .btn-zone{ 
         grid-area: btn-zone;
+        align-self: start;
 
         .btn{
-            cursor: pointer;
-            background-color: variables.$first-bg-color-button;
-            color: white;
-            box-shadow: 5px 7px 20px 0px #5be9d4, inset -1px -1px 5px #81868c;
-            font-size: 0.900rem;
-            font-weight: bold;
-            padding: 0.800rem 1.5rem;
-            border: none;
-            border-radius: 20px;
-            margin-left: 0.600rem;
-        }
-        
-        .btn:hover {
-            background-color: #50cdba;
-            transition: 0.25s ease;
+            @include button-style;
         }
         
         .btn-two {
-            @extend .btn;
+            @include button-style;
             background-color: variables.$second-bg-color-button;
-            box-shadow: 5px 7px 20px 0px #6174ff, inset -1px -1px 5px #81868c;
+            box-shadow: 5px 7px 20px 0px #939fff, inset -1px -1px 5px #81868c;
         }
         
         .btn-two:hover {
@@ -78,3 +85,5 @@
         }
     }
 }
+
+
