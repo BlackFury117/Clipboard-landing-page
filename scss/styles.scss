@@ -502,7 +502,7 @@
     
     .footer-4 { grid-area: footer-4; color: variables.$color-text; }
     
-    .footer-5 { grid-area: footer-5; justify-self: end; }
+    .footer-5 { grid-area: footer-5; align-self: center; justify-self: end; }
 
     .icon-footer {
         padding-right: .800rem;
