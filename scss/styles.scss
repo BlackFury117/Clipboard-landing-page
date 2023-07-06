@@ -36,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    // min-height: 100vh;
 
     .container{  
         display: grid;
@@ -53,11 +53,12 @@
           "text-zone text-zone text-zone"
           "btn-zone btn-zone btn-zone";
         width: 700px;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
 
         .hero-img{ 
             grid-area: hero-img;
             margin-bottom: 0.500rem;
+            margin-top: 3rem;
         }
 
         .text-zone{
