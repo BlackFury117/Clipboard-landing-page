@@ -7,7 +7,7 @@
     cursor: pointer;
     background-color: variables.$first-bg-color-button;
     color: white;
-    box-shadow: 5px 7px 20px 0px #67fce6, inset -1px -1px 5px #81868c;
+    box-shadow: 5px 7px 20px 0px #acfaee, inset -1px -1px 5px #81868c;
     font-size: 0.900rem;
     font-weight: bold;
     padding: 0.800rem 1.5rem;
@@ -58,7 +58,7 @@
         .hero-img{ 
             grid-area: hero-img;
             margin-bottom: 0.500rem;
-            margin-top: 2.2rem;
+            // margin-top: 1rem;
         }
 
         .text-zone{
@@ -86,7 +86,7 @@
             .btn-two {
                 @include button-style;
                 background-color: variables.$second-bg-color-button;
-                box-shadow: 5px 7px 20px 0px #939fff, inset -1px -1px 5px #81868c;
+                box-shadow: 5px 7px 20px 0px #c8cfff, inset -1px -1px 5px #81868c;
             }
             
             .btn-two:hover {
@@ -347,5 +347,23 @@
 
     .icon-footer {
         padding-right: .800rem;
+    }
+
+    .link{
+        color: variables.$color-text;
+    }
+
+    .link:hover{
+        color: variables.$first-bg-color-button;
+        font-weight: bold;
+    }
+
+    .icon-footer{
+        color: #4b545a;
+    }
+
+    .icon-footer:hover{
+        cursor: pointer;
+        color: variables.$first-bg-color-button;
     }
 }
