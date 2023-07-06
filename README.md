@@ -16,7 +16,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 - CSS Grid
 - Mobile-first workflow
 
-Preview it here - [Clipboard landing page solution]() <br><br>
+Preview it here - [Clipboard landing page solution](https://blackfury117.github.io/Clipboard-landing-page/) <br><br>
 
 ## Author
 

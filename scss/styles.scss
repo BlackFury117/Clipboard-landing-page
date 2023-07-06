@@ -30,7 +30,7 @@
 /// FIRST SECTION ///
 
 .bg-container{
-    background-image: url(/images/bg-header-desktop.png);
+    background-image: url(https://github.com/BlackFury117/Clipboard-landing-page/blob/main/images/bg-header-desktop.png?raw=true);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -97,7 +97,7 @@
 
 @media only screen and (max-width: 600px){
     .bg-container {
-        background-image: url(/images/bg-header-mobile.png);
+        background-image: url(https://github.com/BlackFury117/Clipboard-landing-page/blob/main/images/bg-header-mobile.png?raw=true);
         background-repeat: no-repeat;
         background-size: contain;
         padding: 0 1.5rem;
